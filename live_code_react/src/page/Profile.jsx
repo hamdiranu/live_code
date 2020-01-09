@@ -34,9 +34,6 @@ class Profile extends React.Component {
 
     this.getApiResponse()
     // console.log("cek state statusLogin", this.props.statusLogin);
-    console.log("cek state name", this.props.name);
-    console.log("cek state email", this.props.email);
-    console.log("cek state api_key", this.props.api_key);
     if (this.props.statusLogin === false) {
       return <Redirect to={{ pathname: "/signin" }} />;
     } else {
