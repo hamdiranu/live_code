@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+@font-face {
+    src: url('../font/sf/SFCompactDisplay-Semibold.ttf');
+    font-family: "SFCompactDisplay";
+}
+.option {
+    margin: 0;
+    display: ruby;
+}
+
+.dropdown button{
+    font-size: 13px;
+    border: none;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    background-color: none;
+}
+
+.background_header {
+    background-color: #F8F9FA;
+}
+
+.header-nav__list1 p{
+    font-size: 13px;
+    padding: 0 15px;
+    display: block;
+    color: #F47522;
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    font-weight: bold;
+}
+
+.header-nav__list1 li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-nav__list1 li a{
+    transition: all 0.3s ease;
+}
+
+.header-nav__list1 li a:hover {
+    color: #F47522;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.altalogo {
+    padding: 0px;
+    display: contents;
+    padding-right: 0px;
+    margin-right: 20px;
+}
+
+.tengah {
+    padding-top: 10px;
+}
+                                                            /* # H O M E  */
+.buttonhome {
+    background: #F47522;
+    color: white;
+    border: 2px solid #F47522;
+    width: 150px;
+    height: 43px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    text-align: center;
+    vertical-align: auto;
+    transition: 0.3s;
+    margin-top: 25px;
+    line-height: 38px;
+    
+}
+
+.buttonhome:hover {
+    background: white;
+    color: #F47522;
+    border: 2px solid #F47522;
+    text-decoration: none;
+}
+
+.header-nav__list1 li:hover {
+    color: #F47522;
+    text-decoration: none;
+}
+
+
+.container2 {
+    padding-top: 80px;
+    padding-bottom: 194px;
+}
+
+.foto img{
+    border-radius: 50%;
+}
+
+.header-nav__list1 li a {
+    font-size: 13px;
+    padding: 0 15px;
+    display: block;
+    color: #19345E;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+
+}
+
+p{
+    font-size: 13px;
+    padding: 0 10px;
+    display: block;
+    color: #F47522;
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    font-weight: bold;
+}
+
+.header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    -webkit-box-shadow: 0px 3px 6px 2px rgba(193,195,199,1);
+    -moz-box-shadow: 0px 3px 6px 2px rgba(193,195,199,1);
+    box-shadow: 0px 3px 6px 2px rgba(193,195,199,1);
+}
+
+.search_bar {
+    display: ruby;
+}
+
+.kabarkabar {
+    padding-left: 0px;
+}
+
+.kabarkabar h3{
+    margin-right: 100px;
+    padding: 0px 0px;
+}
+
+.header-nav1 {
+    display: table;
+} 
+
+.header-nav__list1 {
+    margin: 0;
+}
+
+.dropdown button {
+    background-color: #F8F9FA;
+    color: #19346C;
+}
+
+.dropdown button :hover{
+    background-color: #F8F9FA;
+    color: #19346C;
+}
+
+.input-group.md-form.form-sm.form-2 input {
+    border: 1px solid #bdbdbd;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    }
+
+.input-group.md-form.form-sm.form-2 input.lime-border {
+border: 1px solid #cddc39;
+}
+
+.berita_terkini h5 {
+    color:#0B8887;
+    padding-right: 210px;
+    padding-top: 10px;
+    margin: auto;
+    padding-left: 10px;
+    font-size: 15px;
+    display: contents;
+}
+
+.berita_terkini a{
+    color: #89E3CB;
+    font-size: 16px;
+}
+
+.berita_terkini {
+    margin-top: 100px;
+    display: flex;
+    border: 1px solid #bdbdbd;
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+    -moz-box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+    box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+    padding: 10px;
+}
+
+.isi_berita_terkini {
+    border: 1px solid #bdbdbd;
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+    -moz-box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+    box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.kotak_sign_in {
+    margin-top:"100px";
+    border: 1px solid;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20%;
+}
+
+.nomor h6{
+    background-color: red;
+    color: white;
+    border-radius: 30%;
+    padding: 3px 20px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.judul a{
+    color: #009594;
+    margin-bottom: 0px;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.kumpulan_detail {
+    margin-top: 80px;
+}
+
+.detail_berita {
+    margin-top: 20px;
+    border: 1px solid #bdbdbd;
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+    -moz-box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+    box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+    margin-left: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 30px;
+}
+
+.detail_berita img {
+    width: inherit;
+}
+
+.bacaan_detail_berita {
+    top: 100px;
+}
+
+.judul_detail {
+    color: #1F406C;
+    padding: 10px 15px;
+    padding-bottom: 0px;
+    font-size: 18px;
+}
+
+.judul_detail a{
+    color: #1F406C;
+}
+
+.isi_detail {
+    padding: 10px 15px;
+}
+
+.judul_detail h4{
+    font-size: 20px;
+}
+
+.isi_detail h4 {
+    font-size: 13px;
+}
+
+.last_update_detail {
+    padding: 10px 15px;
+    font-size: 8px;
+}
+
+.last_update_detail h4 {
+    font-size: 9px;
+    margin-bottom: 20px;
+}
+
+.nav_bar {
+    margin-left: 40px;
+}
+
+.love_share_down {
+    background-color: #F7F7F7;
+    display: ruby;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid #F1F1F1 ;
+}
+
+.love_share_down li{
+    list-style-type: none;
+    display: inline;
+}
+
+.search_bar button{
+    height: 26px;
+    width: 30px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+@media(max-width:991px) {
+
+    .altalogo {
+        padding: 0px;
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    .judul a{
+        color: #009594;
+        margin-bottom: 0px;
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    .judul_detail h4{
+        font-size: 12px;
+    }
+    
+    .judul_detail a{
+        font-size: 23px;
+    }
+
+    .berita_terkini h5 {
+        color:#0B8887;
+        padding-right: 210px;
+        padding-top: 5px;
+        margin: auto;
+        padding-left: 10px;
+        font-size: 14px;
+        display: ruby;
+    }
+
+    .berita_terkini a{
+        color: #89E3CB;
+        font-size: 15px;
+    }
+
+    .kumpulan_detail {
+        margin-top: 30px;
+    }
+
+    .berita_terkini {
+        margin-top: 155px;
+        display: block ruby;
+        border: 1px solid #bdbdbd;
+        -webkit-box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+        -moz-box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+        box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+        padding: 10px;
+    }
+
+    .detail_berita {
+        margin-top: 20px;
+        border: 1px solid #bdbdbd;
+        -webkit-box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+        -moz-box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+        box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .my_name h1 {
+        margin: 0 auto;
+        display: table;
+        font-size: 50px;
+        padding-bottom: 20px;
+        text-align: center;
+
+    }
+
+    .my_name h3 {
+        margin: 0 auto;
+        display: table;
+        font-size: 25px;
+        padding-bottom: 40px;
+        text-align: center;
+
+    }
+
+    .my_name h4 {
+        margin: 0 auto;
+        display: table;
+        font-size: 15px;
+        padding-bottom: 20px;
+        text-align: center;
+
+    }
+
+    .option1 {
+    align-self: center;
+    display: ruby;
+    }
+
+    .header-nav__list1 p, .header-nav__list1 li a {
+        font-size: 10px;
+    }
+
+    .my_name h4 {
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .my_name {
+        padding: 30px 30px 30px 30px;
+    }
+
+    .foto_about .foto img {
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+    }
+
+
+    .foto_about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 29px 0px;
+        width: 100%;
+        max-width: 340px;
+        margin: 10px auto;
+    }
+
+    .foto_about .dots img {
+        bottom: 320px;
+        left: 0;
+        position: absolute;
+    }
+
+    .Table {
+        overflow: auto;
+    }
+
+    .copyright {
+        margin-top: 20px;
+        display: grid;
+        padding: 0;
+        border-left: 1px solid rgba(255, 255, 255, 0.2);
+        justify-content: right;
+    }
+
+    .media_sosial {
+        justify-content: left;
+        padding-left: 0;
+        display: grid;
+    }
+
+    .bullet1, .bullet2, .bullet3, .vertical-line{
+        display: none;
+    }
+
+    .experience-article{
+        margin-left: 10%;
+    }  
+
+    .article_tengah {
+        margin: 0 auto;
+        display: table;
+    }
+
+    .experience-left {
+        display: none;
+    }
+}
+
+@media(max-width:767px) {
+
+    .kotak_sign_in {
+        margin-top:"222px";
+        border: 1px solid;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 20%;
+    }
+
+    .kabarkabar h3{
+        margin-right: 0px;
+        padding: 0px 0px;
+    }
+
+    .nav_bar {
+        padding-bottom: 10px;
+        margin-left: 0px;
+    }
+
+    .search_bar {
+        padding: 10px 10px;
+    }
+
+    .judul a{
+        color: #009594;
+        margin-bottom: 0px;
+        font-size: 13px;
+        padding-left: 15px;
+    }
+
+    .kumpulan_detail {
+        margin-top: 30px;
+    }
+
+    .berita_terkini {
+        margin-top: 210px;
+        display: block ruby;
+        border: 1px solid #bdbdbd;
+        -webkit-box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+        -moz-box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+        box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+        padding: 10px;
+    }
+
+    .detail_berita {
+        margin-top: 20px;
+        border: 1px solid #bdbdbd;
+        -webkit-box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+        -moz-box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+        box-shadow: 2px 2px 2px 2px rgba(193,195,199,1);
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .header-nav1,.foto img,.my_name a{
+        margin: 0 auto;
+        display: table;
+        z-index: 100;
+    }
+    .altalogo {
+    text-align: center;
+    }
+
+    .my_name h1 {
+        margin: 0 auto;
+        display: table;
+        font-size: 60px;
+        padding-bottom: 20px;
+        text-align: center;
+
+    }
+
+    .my_name h3 {
+        margin: 0 auto;
+        display: table;
+        font-size: 30px;
+        padding-bottom: 40px;
+        text-align: center;
+
+    }
+
+    .my_name h4 {
+        margin: 0 auto;
+        display: table;
+        font-size: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+
+    }
+
+    .option1 {
+        align-self: center;
+        padding-bottom: 5px;
+    }
+
+    .header-nav__list1 p, .header-nav__list1 li a {
+        font-size: 10px;
+    }
+
+    .my_name h4 {
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .my_name {
+        padding: 30px 30px 30px 30px;
+    }
+
+    .foto_about .foto img {
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+        align-items: center;
+        z-index: 1;
+    }
+
+
+    .foto_about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 29px 0px;
+        width: 100%;
+        max-width: 340px;
+        margin: 10px auto;
+    }
+
+    .foto_about .dots img {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    .Table {
+        overflow: auto;
+    }
+
+    .copyright {
+        text-align: center;
+        margin-top: 20px;
+        display: table;
+        padding: 0;
+        border: none;
+    }
+
+    .media_sosial {
+        justify-content: right;
+        padding-left: 0;
+        display: grid;
+    }
+
+    .bullet1, .bullet2, .bullet3, .vertical-line{
+        display: none;
+    }
+
+    .experience-article{
+        margin-left: 10%;
+    }
+}
