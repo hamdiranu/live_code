@@ -10,7 +10,7 @@ class Home extends React.Component {
       <div className="body">
         <Header/>
         <div className="container">
-          <div style={{marginTop:"100px", textAlign:"center"}}><h1>OPSS SORRY, NOT MATCH</h1></div>
+          <div style={{marginTop:"100px", textAlign:"center"}}><h1>OPSS SORRY, COMING SOON</h1></div>
         </div>
       </div>
     );

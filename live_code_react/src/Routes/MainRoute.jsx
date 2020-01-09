@@ -17,8 +17,12 @@ const MainRoute = () => {
                     <Route exact path="/" component={Home}/>
                     <Route exact path="/signin" component={SignIn}/> */}
                     <Route exact path="/profile" component={Profile}/>
-                    <Route exact path="/news" component={Home}/>
-                    <Route path="/news-category/:category" component={Home}/>
+                    <Route exact path="/movies" component={Home}/>
+                    <Route exact path="/romance" component={Home}/>
+                    <Route exact path="/action" component={Home}/>
+                    <Route exact path="/fiction" component={Home}/>
+                    <Route exact path="/comedy" component={Home}/>
+                    <Route path="/movies-category/:category" component={Home}/>
                     <Route component={NotMatch}/>
                 </Switch>
             </BrowserRouter>

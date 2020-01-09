@@ -5,7 +5,6 @@ import logo from '../logo.svg';
 import { Link } from 'react-router-dom';
 import { store } from "../store";
 
-
 import { withRouter } from "react-router-dom";
 import { connect } from "unistore/react";
 import { actions } from "../store";
@@ -17,14 +16,6 @@ class Header extends React.Component {
     handleSearchContent=(e)=>{
         this.props.handleSearch(e)
         this.props.getDetailBerita()
-        this.props.getListberitaterkini()
-    }
-
-    // fungsi untuk pilih kategori saat navbar di klik
-    handleClickContent=(e)=>{
-        this.props.handleClickKategori(e)
-        this.props.getDetailBerita()
-        this.props.getListberitaterkini()
     }
 
     // fungsi untuk SignOut
@@ -37,6 +28,11 @@ class Header extends React.Component {
         this.props.history.push("/");
     }
 
+    goBackHome = () => {
+        store.setState({isLoadingDetailBerita : true});
+        console.warn("cek isloading", store.getState().isLoadingBeritaTerkini)
+    }
+
     render() {
 
     return (
@@ -45,26 +41,26 @@ class Header extends React.Component {
                 <div className="row align-items-center">
                     <div className="col-md-3 col-sm-12 altalogo">
                         <div>
-                            <Link to="/" onClick={e => this.props.goBackHome()}><img src={logo} style={{width:"60px", height:"60px"}} className="App-logo" alt="logo" /></Link>
+                            <Link to="/" onClick={e => this.goBackHome()}><img src={logo} style={{width:"60px", height:"60px"}} className="App-logo" alt="logo" /></Link>
                         </div>
                         <div className="kabarkabar">
-                        <Link to="/" onClick={e => this.props.goBackHome()}><h3 style={{color:"#1F406C"}}>KabarKabar</h3></Link>
+                        <Link to="/" onClick={e => this.goBackHome()}><h3 style={{color:"#1F406C"}}>Movies</h3></Link>
                         </div>
                     </div>
                     <div className="col-md-4 option1" style={{display:"contents", textAlign:"center"}}>
                         <div className="header-nav1">
                             <ul className="header-nav__list1 list-unstyled">
                                 <li>
-                                    <Link to="/news-category/:Health" onClick={e =>this.handleClickContent("health")}>Health</Link>
+                                    <Link to="/romance" onClick={e =>this.props.handleClickContentStore("romance")}>Romance</Link>
                                 </li>
                                 <li>
-                                    <Link to="/news-category/:Sport" onClick={e => this.handleClickContent("sport")}>Sport</Link>
+                                    <Link to="/action" onClick={e => this.props.handleClickContentStore("action")}>Action</Link>
                                 </li>
                                 <li>
-                                    <Link to="/news-category/:Technology" onClick={e =>this.handleClickContent("technology")}>Technology</Link>
+                                    <Link to="/fiction" onClick={e =>this.props.handleClickContentStore("fiction")}>Fiction</Link>
                                 </li>
                                 <li>
-                                    <Link to="/news-category/:Science" onClick={e =>this.handleClickContent("science")}>Science</Link>
+                                    <Link to="/comedy" onClick={e =>this.props.handleClickContentStore("comedy")}>Comedy</Link>
                                 </li>
                             </ul>
                         </div>
@@ -72,9 +68,9 @@ class Header extends React.Component {
                             <button class="dropdown-toggle" type="button" data-toggle="dropdown">Lainnya
                             </button>
                             <ul class="dropdown-menu">
-                            <li><Link to="/news-category/:Science" onClick={e =>this.handleClickContent("entertainment")}>Entertainment</Link></li>
-                            <li><Link to="/news-category/:Science" onClick={e =>this.handleClickContent("business")}>Business</Link></li>
-                            <li><Link to="/news-category/:Science" onClick={e =>this.handleClickContent("general")}>General</Link></li>
+                            <li><Link to="/Adult" onClick={e =>this.props.handleClickContentStore("romance")}>Adult</Link></li>
+                            <li><Link to="/Children" onClick={e =>this.props.handleClickContentStore("action")}>Children</Link></li>
+                            <li><Link to="/Science" onClick={e =>this.props.handleClickContentStore("comedy")}>Science</Link></li>
                             </ul>
                         </div>
                     </div>

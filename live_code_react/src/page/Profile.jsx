@@ -15,11 +15,11 @@ class Profile extends React.Component {
 
   getApiResponse = () =>{
     axios
-        .post("https://react-challenge1.free.beeceptor.com/")
+        .post("https://api-todofancy.herokuapp.com/api/auth")
         .then(function(response){
-            store.setState({ name: response.data.name});
-            store.setState({ email: response.data.email});
-            store.setState({ api_key: response.data.api_key});
+            store.setState({ name: response.data.user_data.username});
+            store.setState({ email: response.data.user_data.email});
+            store.setState({ avatar: response.data.user_data.avatar});
             // handle success
             // console.log(response.data);
         })
@@ -43,7 +43,7 @@ class Profile extends React.Component {
       return (
         <React.Fragment>
           <Header />
-          <section className="content" style={{paddingTop:"222px",textAlign:"center"}}>
+          <section className="content" style={{paddingTop:"150px",textAlign:"center"}}>
             <h1
               style={{
                 textalign: "center"
@@ -51,16 +51,20 @@ class Profile extends React.Component {
             >
               Profile
             </h1>
-            <p>
+            <div className="col-10 kotak_profile" style={{marginTop:"10px", marginLeft:"100px"}}>
+              <div className="col-2 kotak_gambar">
+                <img src={this.props.avatar} style={{width:"100%", height:"100%"}} alt=""/>
+              </div>
+              <div className="col-7">
+                <p style={{fontSize:"24px", paddingTop:"17px"}}>
+                  <label>Name:</label> {this.props.name}
+                </p>
+                <p style={{fontSize:"24px", paddingTop:"0px" }}>
+                  <label>Email:</label> {this.props.email}
+                </p>
+              </div>
+            </div>
               
-              <label>Name:</label> {this.props.name}
-            </p>
-            <p>
-              <label>Email:</label> {this.props.email}
-            </p>
-            <p>
-              <label>Api Key:</label> {this.props.api_key}
-            </p>
           </section>
         </React.Fragment>
       );
@@ -68,4 +72,4 @@ class Profile extends React.Component {
   }
 };
 
-export default connect("search, name, email, api_key, statusLogin", actions)(withRouter(Profile));
+export default connect("search, name, email, avatar, statusLogin", actions)(withRouter(Profile));

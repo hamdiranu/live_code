@@ -9,6 +9,26 @@
     display: ruby;
 }
 
+.isi_container button {
+    color: white;
+    background-color: #006CFF;
+    margin-top: 10px;
+}
+
+.kotak_profile {
+    margin-top:"110px";
+    border: 1px solid;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+}
+
+.kotak_gambar {
+    border-right: 1px solid black;
+}
+
 .dropdown button{
     font-size: 13px;
     border: none;
@@ -16,6 +36,7 @@
     font-weight: bold;
     background-color: none;
 }
+
 
 .background_header {
     background-color: #F8F9FA;
